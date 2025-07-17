@@ -1,3 +1,5 @@
+import myPhoto from '../assets/Head pic.jpg';
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Instagram, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
@@ -70,10 +72,11 @@ const Hero: React.FC = () => {
                   className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center text-6xl font-bold text-purple-400 overflow-hidden"
                 >
                   <img
-                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    src={myPhoto}
                     alt="Deepak Kumar"
                     className="w-full h-full object-cover rounded-full"
                   />
+
                 </motion.div>
               </motion.div>
               
@@ -197,6 +200,16 @@ const Hero: React.FC = () => {
               >
                 Get In Touch
               </motion.button>
+
+              <motion.a
+                href="/Deepak_Resume.pdf"
+                download="Deepak_Resume.pdf"
+                whileHover={{ scale: 1.05 }}
+                className="px-8 py-4 bg-gradient-to-r from-teal-500 to-purple-500 text-white rounded-full font-semibold hover:from-teal-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25 text-center"
+              >
+                Download Resume
+              </motion.a>
+
             </motion.div>
           </motion.div>
         </div>

@@ -129,6 +129,17 @@ const Contact: React.FC = () => {
               </div>
 
               {/* Quick Message */}
+              {/* Resume Download Button */}
+                <motion.a
+                href="/Deepak_Resume.pdf"
+                download="Deepak_Resume.pdf"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-teal-500 to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:from-teal-600 hover:to-purple-600 hover:shadow-purple-500/30 text-center"
+              >
+                Download My Resume
+              </motion.a>
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
